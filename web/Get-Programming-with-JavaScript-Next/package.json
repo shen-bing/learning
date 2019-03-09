@@ -1,0 +1,16 @@
+{
+    "name": "javascriptnext",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Get Programming With JavaScript Next.",
+    "scripts": {},
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "tsify": "^4.0.1",
+        "typescript": "^3.2.4"
+    },
+    "repository": {}
+}
