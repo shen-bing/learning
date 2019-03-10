@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <html>
     <head>
         <title>Reading List</title>
@@ -5,7 +8,7 @@
     </head>
 
     <body>
-        <h2>Your Reading List</h2>
+        <h2><span th:text="${reader.fullname}">Name</span>'s Reading List</h2>
         <div th:unless="${#lists.isEmpty(books)}">
             <dl th:each="book: ${books}">
                 <dt class="bookHeadline">
@@ -29,7 +32,7 @@
 
         <h3>Add a book</h3>
 
-        <form method="POST">
+        <form method="POST" th:action="@{/readingList}">
             <label for="title">Title:</label>
             <input type="text" name="title" size="50" />
             <br>

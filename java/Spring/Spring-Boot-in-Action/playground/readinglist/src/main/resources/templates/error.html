@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html>
+
+<head>
+    <title>Oops!</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    </link>
+</head>
+
+<html>
+<div class="errorPage">
+    <span class="oops">Oops!</span><br />
+    <img th:src="@{ /MissingPage.png }"></img>
+    <p>There seems to be a problem with the page you requested
+        (<span th:text="${ path }">/readingList</span>).</p>
+    <p th:text="${ 'Details: ' + message }"></p>
+    <pre th:text="${ trace }"> Trace </pre>
+</div>
+
+</html>
+
+</html>

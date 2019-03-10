@@ -16,7 +16,7 @@ public class Book
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String reader;
+    private Reader reader;
     private String isbn;
     private String title;
     private String author;

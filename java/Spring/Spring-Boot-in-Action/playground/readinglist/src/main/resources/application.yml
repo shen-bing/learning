@@ -1,0 +1,21 @@
+spring:
+    profiles:
+        active: development
+    devtools:
+        restart:
+            enabled: true
+            exclude: static/**,public/**
+    thymeleaf.cache: false
+
+server:
+    port: 8000
+
+error.whitelabel.enabled: true
+
+logging:
+  level:
+    root: WARN
+    org.springframework.security: DEBUG
+
+amazon:
+    associateId: habuma-20
